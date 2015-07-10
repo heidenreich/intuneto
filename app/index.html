@@ -14,6 +14,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,43 +25,103 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">intuneto</h3>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="intuneto-text">InTuneTo</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./">Learn More <span class="sr-only">(current)</span></a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    <section class="hero-section">
+      <div class="left"></div>
+      <div class=" row hero-text-box text-center">
+        <!-- <h1>Gym Badassery!</h1> -->
+        <div id="poo">Gym Badassery!</div>
+        <!-- <h2>connect.motivate.retain.</h2> -->
+        <div id="poo2">connect.motivate.retain.</div>
+        <button class="clear-button">Discover InTuneTo</button>
       </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    </section>
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <!-- <h2>Increase Your <br>Retention Rates</h2> -->
+            <div class="increase">Increase Your <br>Retention Rates</div>
+          </div>
+          <div class="col-md-7">
+            <form>
+              <input type="email" class="mega-input" id="exampleInputEmail2" placeholder="your email@example.com">
+              <button type="submit" class="btn mega-btn">Learn More</button>
+            </form> <!-- end form -->
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+    <section class="section1">
+      <div class="col-md-6 for-gyms">
+        <h1 class="text-center">For Gyms</h2>
+        <h3>Engaging headline<br>Line Two</h4>
+        <ul>
+          <li>Stock prototype business plan churn rate validation infrastructure iPad.</li>
+          <li>Handshake virality success analytics series A financing scrum project entrepreneur backing partnership traction.</li>
+          <li>Angel investor channels holy grail iPhone pivot vesting period non-disclosure agreement A/B testing buyer responsive web design interaction design backing strategy.</li>
+        </ul>
+        <div class="row text-center">
+        <button type="submit" class="btn mega-btn text-center">Learn More</button>
+        </div>
       </div>
-    </div>
+      <div class="col-md-6 for-members">
+        <h1 class="text-center">For Gyms</h2>
+        <h3>Engaging headline<br>Line Two</h4>
+        <ul>
+          <li>Stock prototype business plan churn rate validation infrastructure iPad.</li>
+          <li>Handshake virality success analytics series A financing scrum project entrepreneur backing partnership traction.</li>
+          <li>Angel investor channels holy grail iPhone pivot vesting period non-disclosure agreement A/B testing buyer responsive web design interaction design backing strategy.</li>
+        </ul>
+        <div class="row text-center">
+        <button type="submit" class="btn mega-btn text-center">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="footer-left pull-left">
+        <span>© InTuneTo <script>document.write(new Date().getFullYear())</script></span>
+        </div>
+        <div class="footer-right pull-right">
+          <ul class="social-links">
+            <li>
+              <span>Get Connected</span>
+            </li>
+            <li>
+              <span><i class="fa fa-twitter"></i> </span>
+            </li>
+            <li>
+              <span><i class="fa fa-facebook"></i> </span>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -75,6 +136,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/FitText.js/jquery.fittext.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
