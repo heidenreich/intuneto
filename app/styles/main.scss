@@ -91,7 +91,7 @@ body {
   padding: 10px 20px;
   border: 2px solid white;
   margin-top: 10%;
-  font-size: 2vw;
+  font-size: 24px;
 }
 
 
@@ -259,9 +259,36 @@ body {
   margin-right: 20px;
   margin-top: 40px;
   color: $badass-blue;
+  cursor: pointer;
+}
+.clicker:hover {
+  color: $badass-orange;
 }
 
+.heading-section {
+    padding: 60px 20px;
+  margin-top: 50px;
+}
+.engaged-section {
+  padding: 60px 20px;
+  background-color: $badass-blue;
+  color: #fff;
+}
+.works-section {
+    padding: 60px 20px;
+  background-color: $intuneto-blue;
+  color: #fff;
+}
+.stats-section {
+    padding: 60px 20px;
+}
 
+.screenshots-section {
+  height: 500px;
+  padding: 60px 20px;
+  color: #fff;
+  background-color: $badass-blue;
+}
 
 
 // for the using outdated browser call out
