@@ -16,24 +16,8 @@ body {
   // padding-bottom: 20px;
   height: 100%;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
-
-// playing with scalable font sizes
-// h1 {
-//   font-size: 6.0vw;
-// }
-// h2 {
-//   font-size: 4.0vw;
-// }
-// h3 {
-//   font-size: 3.0vw;
-// }
-// h4 {
-//   font-size: 2.0vw;
-// }
-// p {
-//   font-size: 2vmin;
-// }
 
 //# nav 
 .navbar{
@@ -48,6 +32,7 @@ body {
 }
 .navbar-default .navbar-nav > li > a {
   color: $intuneto-blue;
+  font-size: 20px;
 }
 
 
@@ -58,7 +43,7 @@ body {
   background-color: $badass-orange;
   position: relative;
   @media (max-width: 500px) {
-    height: 20em;
+    height: 30em;
   }
 }
 .left {
@@ -70,7 +55,7 @@ body {
   background-color: $badasser-orange;
   -webkit-clip-path: polygon(100% 0, 63% 75%, 41% 53%, 0% 100%, 0 60%, 0% 0%);
           clip-path: polygon(100% 0, 63% 75%, 41% 53%, 0% 100%, 0 60%, 0% 0%);
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     height: 20em;
   }
 }
@@ -86,12 +71,34 @@ body {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.hero-text {
+  font-size: 80px;
+  font-weight: 900;
+  @media (max-width: 600px) {
+    font-size: 60px;
+  }  
+  @media (max-width: 430px) {
+    font-size: 40px;
+  }
+}
+.hero-subtext {
+  font-size: 44px;
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }  
+  @media (max-width: 430px) {
+    font-size: 20px;
+  }
+}
 .clear-button {
   background-color: transparent;
   padding: 10px 20px;
   border: 2px solid white;
   margin-top: 10%;
   font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 }
 
 
@@ -146,6 +153,22 @@ body {
   box-shadow: inset 200px 0 0 0 $intuneto-blue;
 }
 
+// #cta section 
+.cta {
+
+  .increase {
+    @media(max-width: 600px) {
+      text-align: center;
+    }
+  }
+  form {
+    @media(max-width: 600px) {
+      text-align: center;
+    }
+  }
+}
+
+// #learn-more section
 // #section1
 .section1 {
   ul {
@@ -155,11 +178,15 @@ body {
     font-size: 18px;
     line-height: 2;
     margin-bottom: 20px;
+    @media(max-width: 600px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 }
 .for-gyms{
   height: 48em;
-  background-image: url("/images/intuneto-gym-image.jpg");
+  background-image: url("../images/intuneto-gym-image.jpg");
   // background-position: 0 50%;
   border: 2px solid $badass-blue;
   box-shadow: inset 0 0 0 1000px rgba(0, 166, 219, 0.4);
@@ -168,7 +195,7 @@ body {
 }
 .for-members{
   height: 48em;
-  background-image: url("/images/intuneto-gym-image.jpg");
+  background-image: url("../images/intuneto-gym-image.jpg");
   // background-position: 100% 0 right;
   border: 2px solid $badass-blue;
   box-shadow: inset 0 0 0 1000px rgba(22, 75, 99, 0.4);
@@ -202,7 +229,18 @@ body {
   margin-right: 10px;
   img {
     width: 100%;
+    height: 620px;
   }
+  h1 {
+    color: $intuneto-blue;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0px 50px;
+  }
+  p {
+    margin: 20px 50px;
+
+  } 
 } 
 
 .flip-container {
@@ -227,8 +265,10 @@ body {
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 6px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  background-color: antiquewhite;
-  // cursor: pointer;
+  cursor: pointer;
+}
+.front.cool {
+  background-color: $intuneto-blue;
 }
 .card .cool {
   padding: 20px 40px;
@@ -266,28 +306,90 @@ body {
 }
 
 .heading-section {
-    padding: 60px 20px;
+  padding: 60px 20px;
   margin-top: 50px;
+  color: $badass-orange;
+  h1  {
+    font-weight: 900;
+    font-size: 50px;
+  }
 }
+
+//# learn-more / gyms
 .engaged-section {
   padding: 60px 20px;
   background-color: $badass-blue;
   color: #fff;
-}
-.works-section {
-    padding: 60px 20px;
-  background-color: $intuneto-blue;
-  color: #fff;
+  .mega-input {
+    width: 40%;
+  }
 }
 .stats-section {
-    padding: 60px 20px;
+  padding: 60px 20px;
+  h1  {
+    font-size: 140px;
+    font-weight: 900;
+    color: $badass-orange;
+  }
+  h2 {
+    font-size: 44px;
+    color: $badass-blue;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: $badass-blue;
+  }
+  .lbs-box {
+    border-left: 8px solid $badass-blue;
+  }
 }
+
+.works-section {
+  padding: 60px 20px;
+  background-color: $intuneto-blue;
+  color: #fff;
+  .thumbnail {
+    background-color: transparent;
+    border: none;
+    .caption {
+      margin: 0px 60px;
+      color: #fff;
+      text-align: center;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 
 .screenshots-section {
   height: 500px;
   padding: 60px 20px;
   color: #fff;
   background-color: $badass-blue;
+}
+
+.gyms-cta-section {
+  padding: 60px 20px;
+  .gyms-cta-section-subtext {
+    font-size: 24px;
+  }
+  .gyms-cta-section-text {
+    color: $badass-orange;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .mega-input {
+    width: 50%;
+  }
+  .btn {
+    padding: 6px 50px;
+
+  }
 }
 
 
