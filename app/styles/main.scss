@@ -5,8 +5,8 @@ $icon-font-path: '../fonts/';
 // endbower
 
 ///Colors
-$badass-orange: #FF6C41;
-$badasser-orange: #FB6344;
+$badasser-orange:  #ed6c16;
+$badass-orange: #FF8300;
 $intuneto-blue: #00A4DB;
 $badass-blue: #164B63;
 
@@ -348,6 +348,7 @@ body {
   margin-top: 40px;
   color: $badass-blue;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .clicker:hover {
   color: $badass-orange;
