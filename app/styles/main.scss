@@ -35,6 +35,47 @@ body {
   font-size: 20px;
 }
 
+// #footer
+// #footer
+.footer {
+  background-color: $badass-blue;
+  color: #fff;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+.footer-left {
+  margin: 20px 0px;
+}
+.footer-right {
+  margin: 20px 0px;
+}
+.copyright {
+  vertical-align: middle;
+}
+.social-links {
+  li {
+    display: inline-block;
+    padding: 0px 10px;
+    vertical-align: inherit;
+  }
+}
+.social {
+  font-size: 24px;
+  color: #fff;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.social:hover {
+  color: $badass-orange;
+    -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
 
 //#hero section
 .hero-section {
@@ -70,6 +111,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  @media (max-width: 600px) {
+    left: 55%;
+  }
 }
 .hero-text {
   font-size: 80px;
@@ -203,42 +247,43 @@ body {
   padding: 5% 5%;
 }
 
-// #footer
-.footer {
-  background-color: $badass-blue;
-  color: #fff;
-  padding: 0px 20px;
-  font-size: 18px;
-}
-.footer-left {
-  margin: 20px 0px;
-}
-.footer-right {
-  margin: 20px 0px;
-}
-.social-links {
-  li {
-    display: inline-block;
-    padding: 0px 10px;
-  }
-}
 
 // #about page
 .about-row {
   margin-top: 50px;
   margin-right: 10px;
+  @media (max-width: 600px) {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .about-gyms-pic {
+  @media (max-width: 600px) {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
   img {
     width: 100%;
-    height: 620px;
+    // height: 620px;
   }
   h1 {
     color: $intuneto-blue;
     font-size: 60px;
     font-weight: 900;
     margin: 0px 50px;
+    @media (max-width: 600px) {
+      margin: 0px 0px;
+      font-size: 50px;
+      text-align: center;
+    }
   }
   p {
     margin: 20px 50px;
+    @media (max-width: 600px) {
+      margin: 0px 0px;
+    }
 
   } 
 } 
@@ -283,6 +328,9 @@ body {
   font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #47525d;
+  @media (max-width: 600px) {
+    padding: 0px 0px;
+  }
 }
 .card .back {
   -webkit-transform: rotateY(180deg);
@@ -315,13 +363,16 @@ body {
   }
 }
 
-//# learn-more / gyms
+
 .engaged-section {
   padding: 60px 20px;
   background-color: $badass-blue;
   color: #fff;
   .mega-input {
     width: 40%;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 }
 .stats-section {
@@ -330,16 +381,25 @@ body {
     font-size: 140px;
     font-weight: 900;
     color: $badass-orange;
+    @media (max-width: 600px) {
+      font-size: 100px;
+    }
   }
   h2 {
     font-size: 44px;
     color: $badass-blue;
     font-weight: 600;
+      @media (max-width: 600px) {
+      font-size: 30px;
+    }
   }
   h3 {
     font-size: 34px;
     font-weight: 600;
     color: $badass-blue;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   .lbs-box {
     border-left: 8px solid $badass-blue;
@@ -357,6 +417,9 @@ body {
       margin: 0px 60px;
       color: #fff;
       text-align: center;
+      @media (max-width: 600px) {
+        margin: 0px 0px;
+      }
       p {
         font-size: 16px;
       }
@@ -382,9 +445,16 @@ body {
     font-size: 40px;
     font-weight: 700;
     margin-right: 10px;
+    @media (max-width: 600px) {
+      display: inherit;
+    }
   }
   .mega-input {
     width: 50%;
+    @media (max-width: 600px) {
+      width: 100%;
+      font-size: 20px;
+    }
   }
   .btn {
     padding: 6px 50px;
