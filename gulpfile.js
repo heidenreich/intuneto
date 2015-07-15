@@ -33,7 +33,7 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('html', ['styles'], function () {
-  var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
+  var assets = $.useref.assets({searchPath: ['.tmp', 'app', 'app/**/*', '.']});
 
   return gulp.src('app/*.html')
     .pipe(assets)
